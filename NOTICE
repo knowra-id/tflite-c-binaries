@@ -1,0 +1,17 @@
+tflite-c-binaries — prebuilt TensorFlow Lite C frameworks for iOS, repackaged for Swift Package Manager.
+
+Upstream: TensorFlow Lite C, part of TensorFlow (https://github.com/tensorflow/tensorflow), tag v2.17.0.
+Copyright 2015–2024 The TensorFlow Authors. Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Release tflite-c-2.17.0
+  Upstream artifact:  TensorFlowLiteC-2.17.0.tar.gz (the CocoaPods `http` source of the TensorFlowLiteC 2.17.0 podspec)
+                      sha256 9667b476015f136e5b332ce040e12822c4ac6d5c58947882ddc809cdff0fb99e, 80,242,958 bytes
+  Upstream LICENSE:   https://raw.githubusercontent.com/tensorflow/tensorflow/v2.17.0/LICENSE
+                      sha256 71c6915d04265772a0339bed47276942c678b45cc01534210ebe6984fd1aec65
+  Modifications:      only TensorFlowLiteC.xcframework extracted (not the Metal or Core ML delegates);
+                      an Info.plist added to each embedded framework slice; the framework code-signed;
+                      zipped with the .xcframework at the archive root.
+  Archive:            TensorFlowLiteC.xcframework.zip, 34,533,145 bytes,
+                      sha256 / swift package compute-checksum a3973e2581666aedf3f5f2a76f533c6463f33aa4d1aa815b79f04841bc3bebfe
+
+No source code of TensorFlow is modified; no Knowra code is included.
