@@ -11,6 +11,8 @@ TensorFlow Lite C framework for iOS, repackaged in the shape Swift Package Manag
 |---|---|---|---|
 | `tflite-c-2.17.0` | TensorFlowLiteC 2.17.0 (`TensorFlowLiteC-2.17.0.tar.gz`, sha256 `9667b476015f136e5b332ce040e12822c4ac6d5c58947882ddc809cdff0fb99e`, 80,242,958 bytes) | `TensorFlowLiteC.xcframework.zip`, 34,533,145 bytes | `a3973e2581666aedf3f5f2a76f533c6463f33aa4d1aa815b79f04841bc3bebfe` |
 
+A tag's asset is never replaced: a re-cut of an already-tagged version is a new tag `tflite-c-<version>-<n>` with its own checksum, so a manifest that pinned the earlier tag keeps verifying the bytes it was written against.
+
 Only the interpreter framework (`TensorFlowLiteC`) is included — not `TensorFlowLiteCMetal` or
 `TensorFlowLiteCCoreML`. Slices: `ios-arm64` and `ios-arm64_x86_64-simulator`; no macOS slice.
 
